@@ -1,21 +1,52 @@
-body {
-    background-color: white;
+.typewrite{
+  background-color: white;
+  text-align: end;
+  color:#fff;
+  margin-left: 35vw;
+  margin-right: auto;
+  padding-top:4em;
+}
+
+* .typewrite{ 
+    color:#fff; 
+    text-decoration: none;
     font-family: 'Lato', sans-serif;
 }
 
 
-        /*   Page width scaling    */
+/*   Page width scaling    */
 
         @media (max-width:350px @screen-xs-max) {
-   
+        h1 {
+        margin-left:20vw;    
+        margin-top: 200px;
+        font-family: @font-title;
+        letter-spacing: 1.5px;
+        font-weight: 100;
+        font-size: 1.4em;
+          }
         }
 
         @media (min-width:750px @screen-sm-min) and (max-width:950px @screen-sm-max) {
-
+        h1 {
+        margin-left:20vw;    
+        margin-top: 200px;
+        font-family: @font-title;
+        letter-spacing: 1.5px;
+        font-weight: 100;
+        font-size: 1.4em;
+          }
         }
 
         @media (min-width:950px @screen-md-min) and (max-width:1150px @screen-md-max) {
-     
+        h1 {
+        margin-left:15vw;    
+        margin-top: 200px;
+        font-family: @font-title;
+        letter-spacing: 1.5px;
+        font-weight: 100;
+        font-size: 1.4em;
+          }
         }
 
         @media (min-width:1200px @screen-lg-min) {
@@ -131,8 +162,8 @@ body {
 .socialicon {
     width: 95px;
     height: 95px;
-    position: relative;
-    transformer: translate(50%);
+    position: center;
+    float: left;
     left: 0px;
     center: 0px;
 }
@@ -140,68 +171,13 @@ body {
 .linked{
     width: 95px;
     height: 95px;
-    position: relative;
-    transformer: translate(50%);
+    position: center;
+    float: left;
     right: 0px;
     center: 0px;
     margin: 15px;
     
 }
-
-/* Typewriter */
-
-
-.typewriter {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
-.typewriter h1 {
-    margin-bottom: 200px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: monospace;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .05em solid orange;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .05em;
-    /* Adjust as needed */
-    animation:
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 50%
-    }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: orange
-    }
-}
-
 
 
 /* Card Display */
